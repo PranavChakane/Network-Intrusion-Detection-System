@@ -16096,7 +16096,7 @@ Network Attack Values :  58630
         <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
         <span class="n">sc</span><span class="o">=</span><span class="n">StandardScaler</span><span class="p">()</span>
         <span class="kn">import</span> <span class="nn">joblib</span>
-        <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">sc</span><span class="p">,</span><span class="s2">&quot;scstd.sav&quot;</span><span class="p">)</span>
+        <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">sc</span><span class="p">,</span><span class="s2">&quot;sc.sav&quot;</span><span class="p">)</span>
         <span class="n">rs</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">num_columns</span><span class="p">])</span>
         
         <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">num_columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">rs</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">num_columns</span><span class="p">])</span>
